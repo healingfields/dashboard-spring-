@@ -25,7 +25,7 @@ public class CommentService {
 
     @Transactional(rollbackFor = Exception.class)
     public List<Comment> saveAll(List<Comment> comments){
-        LOGGER.info("saveing {}", comments);
+        LOGGER.info("saving {}", comments);
         return this.commentRepository.saveAll(comments);
     }
 
